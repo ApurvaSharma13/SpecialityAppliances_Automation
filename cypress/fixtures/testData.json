@@ -1,3 +1,16 @@
 {
-    "url" : "https://specialtyappliances.com/"
+    "url" : "https://specialtyappliances.com/",
+    "PageTitle": "Specialty Appliances",
+    "newAccountURL" : "https://specialtyappliances.com/new-accounts/",
+    "practiceName" : "PracticeUser1",
+    "practiceAddress" : "TestAddress",
+    "streetAddress" : "Baker street",
+    "otherAddress" : "test address",
+    "state" : "Alaska",
+    "city" : "city",
+    "firstName" : "test",
+    "lastName" : "user",
+    "role" : "testrole",
+    "email" : "Testemail@gmail.com",
+    "contact" : "5634221450"
 }
