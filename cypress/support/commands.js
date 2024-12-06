@@ -52,11 +52,13 @@ Cypress.Commands.add('login', (overrides = {}) => {
       log: true
     };
 
+    
     cy
         .visit('/')
         .request(options).then(resp => {
             const {access_token} = resp.body
             cy.setCookie('auth0_token', access_token, {log: false})
             cy.log('cookie set')
+
         })
   });
