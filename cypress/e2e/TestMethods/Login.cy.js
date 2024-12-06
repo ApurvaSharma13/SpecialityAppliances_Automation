@@ -1,11 +1,14 @@
-import Login from "../PageClasses/Login";
+/// <reference types="Cypress" />
 
-describe('Login to ORMHRM site', () => {
-  it('verify user is able to login successfully', () => {
-    Login.setUp();
-    /*Login.setUserName(); 
-    Login.setPassword();
-    Login.submitLogin();
-    Login.verifyLogin();*/
-    })
-  })
+import LoginPage from "../PageClasses/LoginPage";
+const loginPage = new LoginPage();
+
+        describe('login', () => {
+          it('should successfully log into our app', () => {
+            cy
+                .clearAllCookies()
+                .login()
+                .visit('https://signin.dev.nextgen.specialtyappliances.com/')
+                .wait(100)
+          });
+        });
